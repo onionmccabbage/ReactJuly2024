@@ -11,9 +11,66 @@ Toby Dussek
 4:30  end
 
 - introductions and setup
-- the repo
+- manage recordings
+- the repo https://github.com/onionmccabbage/ReactJuly2024
+- code-along and then lab exercises
+- all questions, comments, observations, interjections etc. welcome at any time
 
+- the DOM and how React decides what to render
+- React dev tools
+- no longer use class components - instead use pure functional components
+
+- scaffolding a vite project with React and Typescript
+- the vite cli
 - understanding state: the useState hook
+- lifting state up
+- immutable props and state: a single-source of truth
 - passing props
 - passing components as props (rendering children)
 - useContext hook
+- hooks and component lifecycle
+
+- writing cutom hooks
+
+- jsx
+- conditional rendering
+- iterative rendering and keys
+- <scrict> mode: so good they rendered it twice
+
+- <form> and <Form> (also neither)
+- browser-driven validation
+- form action
+- form fields: controlled and uncontrolled
+- binding form field events
+- client-side data: map and filter
+
+- JavaScript
+- events, event.target, preventDefault and stopPropagation
+- modern ES6+ features
+
+- Typescript
+- language engine and data-type checking
+- development-time only
+- any-type and optional members
+- types, combinations, interface, enum
+- generics
+- the Typescript playground and tsconfig
+
+- asynchronous code: loading data with fetch
+- events, promises
+- observables
+
+- CSS, isolation and custom style components
+
+- dev and prod build automation
+
+- JSON: direct import for local config
+
+- ssr, eager-loading and lazy loading
+
+- routing with react-router
+- root router
+- <a>,  <Link> and <outlet>
+- SPA and multi-page apps
+- passing route parameters
+- catch-all and 404 handlers
