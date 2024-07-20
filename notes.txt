@@ -3,3 +3,17 @@ React
 July 22, 23, 25, 26
 
 Toby Dussek
+
+9:30  start
+11:00 coffee
+12:30 lunch
+3:00  tea
+4:30  end
+
+- introductions and setup
+- the repo
+
+- understanding state: the useState hook
+- passing props
+- passing components as props (rendering children)
+- useContext hook
