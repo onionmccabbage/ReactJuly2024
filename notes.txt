@@ -10,18 +10,18 @@ Toby Dussek
 3:00  tea
 4:30  end
 
-- introductions and setup
-- manage recordings
-- the repo https://github.com/onionmccabbage/ReactJuly2024
-- code-along and then lab exercises
+> introductions and setup
+> manage recordings
+> the repo https://github.com/onionmccabbage/ReactJuly2024
+> code-along and then lab exercises
 - all questions, comments, observations, interjections etc. welcome at any time
 
 - the DOM and how React decides what to render
 - React dev tools
 - no longer use class components - instead use pure functional components
 
-- scaffolding a vite project with React and Typescript
-- the vite cli
+> scaffolding a vite project with React and Typescript
+> the vite cli
 - understanding state: the useState hook (all hooks MUST go at the top of the code)
 - lifting state up
 - immutable props and state: a single-source of truth

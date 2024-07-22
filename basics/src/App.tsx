@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import MyButton from './components/MyButton'
 
 // NB React uses initial cap for any elemnt that is React-specific
 const App=()=>{ // or function App(){}
@@ -15,12 +16,16 @@ const App=()=>{ // or function App(){}
   function fnA(x:number, y:number){ // declare types for Typescript
     return x+y
   }
-  const fnB = (x:number, y:number)=>{    return x*y  }
+  // in JS everything is an object (including functions)
+  // fnB is an identifier that will let us access the ()=>{}
+  const fnB = (x:number, y:number)=>{    
+    return x*y
+  }
   // if there is only one line we do not need {return}
-  const fnC = (x:number, y:number)=>  x*y
+  const fnC = (x:number, y:number)=>  x*y // implicit return
 
-
-
+  // in JS we can do this: if there is exactly one incoming argument
+  // const fnD = x=>x*x // this is fine is JS but TS complains
 
   return (
     <>
@@ -34,6 +39,7 @@ const App=()=>{ // or function App(){}
           <p>{c.n} {c.a} {c.status}</p>
           {/* we may find JS objects inside a React binding {{}} */}
           {/* <p>{{cost:55.5}}</p> */}
+          <MyButton /> 
         </section>
       </article>
       <footer></footer>
@@ -42,3 +48,5 @@ const App=()=>{ // or function App(){}
 }
 
 export default App
+
+
