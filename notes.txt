@@ -63,7 +63,7 @@ q - how can we do like onBlur  and maintain mutated text input...
 - <form> and <Form> (also neither)
 - browser-driven validation
 - form action
-- form fields: controlled and uncontrolled
+> form fields: controlled and uncontrolled
 - binding form field events
 - client-side data: map and filter
 

@@ -1,8 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import MyButton from './components/MyButton'
 import ButtonPanel from './components/ButtonPanel'
 import Label from './Label'
 import Wrapper from './components/Wrapper'
