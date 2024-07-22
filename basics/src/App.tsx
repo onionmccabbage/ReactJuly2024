@@ -6,6 +6,7 @@ import MyButton from './components/MyButton'
 import ButtonPanel from './components/ButtonPanel'
 import Label from './Label'
 import Wrapper from './components/Wrapper'
+import MyForm from './components/MyForm'
 
 // NB React uses initial cap for any elemnt that is React-specific
 const App = () => { // or function App(){}
@@ -52,6 +53,8 @@ const App = () => { // or function App(){}
             <Label person={c} />
             <Label person={c} />
           </Wrapper>
+          <hr/>
+          <MyForm />
         </section>
       </article>
       <footer></footer>

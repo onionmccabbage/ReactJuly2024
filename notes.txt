@@ -20,6 +20,11 @@ Toby Dussek
 - React dev tools
 - no longer use class components - instead use pure functional components
 
+q - how can we do like onBlur  and maintain mutated text input...
+
+
+
+
 > scaffolding a vite project with React and Typescript
 > the vite cli
 - understanding state: the useState hook (all hooks MUST go at the top of the code)
