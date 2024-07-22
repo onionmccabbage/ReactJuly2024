@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 
 import './App.css'
 import CreatureRenderer from './components/creature_renderer'
@@ -22,12 +22,16 @@ function App() {
         {/* {creatures && creatures.map((item, key) => { // key will be 0, 1, 2 ... */}
         {/* does this work with async data */}
         {creatures?.map((item, key) => { // key will be 0, 1, 2 ...
-        {/* or use the ternary operator condition?true:false */}
-        // {!creatures? <p>Wait...</p> :creatures.map((item, key) => { // key will be 0, 1, 2 ...
+          {/* or use the ternary operator condition?true:false */ }
+          // {!creatures? <p>Wait...</p> :creatures.map((item, key) => { // key will be 0, 1, 2 ...
           return (
             // NB React really likes it if you provide a unique key for iterables
             // <li key={key}>{item.creature} {item.cost} {item.count}</li>
-            <CreatureRenderer key={key} creature={item} />
+            // use <> or Fragment as a disposable container
+            <Fragment key={key}>
+              {/* <CreatureEditor /> */}
+              <CreatureRenderer creature={item} />
+            </Fragment>
           ) // end of return
         } // end of function literal in map
         ) // end of map
