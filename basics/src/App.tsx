@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import MyButton from './components/MyButton'
 import ButtonPanel from './components/ButtonPanel'
+import Label from './Label'
 
 // NB React uses initial cap for any elemnt that is React-specific
 const App=()=>{ // or function App(){}
@@ -42,6 +43,8 @@ const App=()=>{ // or function App(){}
           {/* <p>{{cost:55.5}}</p> */}
           {/* <MyButton />  */}
           <ButtonPanel />
+          {/* mini challenge 001 */}
+          <Label person={c} />
         </section>
       </article>
       <footer></footer>

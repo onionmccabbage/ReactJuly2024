@@ -1,0 +1,12 @@
+Mini-Challenge
+==============
+We need a component to render a persons name, age and status 
+    e.g. a <Label /> component
+This component does not need it's own state, but will receive static properties
+Decide (in the parent component) how to declare the name, age and status
+Decide how these three data members should be rendered in the 'return' of the Label component
+
+Place a couple of instances of this component in the App
+(each with different values)
+
+NB for now use :any for types
