@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import MyButton from './components/MyButton'
+import ButtonPanel from './components/ButtonPanel'
 
 // NB React uses initial cap for any elemnt that is React-specific
 const App=()=>{ // or function App(){}
@@ -39,7 +40,8 @@ const App=()=>{ // or function App(){}
           <p>{c.n} {c.a} {c.status}</p>
           {/* we may find JS objects inside a React binding {{}} */}
           {/* <p>{{cost:55.5}}</p> */}
-          <MyButton /> 
+          {/* <MyButton />  */}
+          <ButtonPanel />
         </section>
       </article>
       <footer></footer>
