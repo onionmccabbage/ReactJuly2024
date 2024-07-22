@@ -9,6 +9,8 @@ const ButtonPanel = () => {
     // we need an event listener for when the button gets clicked
 
     const handleClick = (event:any)=>{
+        event.stopPropagation() // prevent the event from happeninig on any parent
+
         // we may wish to write some debug code
         console.log(event.target.name)
 
