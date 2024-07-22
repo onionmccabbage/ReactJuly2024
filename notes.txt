@@ -22,17 +22,35 @@ Toby Dussek
 
 - scaffolding a vite project with React and Typescript
 - the vite cli
-- understanding state: the useState hook
+- understanding state: the useState hook (all hooks MUST go at the top of the code)
 - lifting state up
 - immutable props and state: a single-source of truth
 - passing props
+- receiving props into components: 
+    const MyComponent(props)=>{}
+    const MyComponent({propA, propB})=>{}
+- only ever use state to change stateful values: never mutate them directly
 - passing components as props (rendering children)
 - useContext hook
 - hooks and component lifecycle
 
-- writing cutom hooks
+- Architecture
+- separating components into logical structures
+- re-useable components and code: export and exportDefault
+- ways to import (also configurations needed)
+- ways to architect a project
+- where to put static assets
+- package.json: adding libraries and configuring behaviour
+- other related config files: tsconfig etc.
+- what a production build looks like
 
-- jsx
+- writing custom hooks
+
+- jsx: always use Capitals for non-standard elements
+- <> and <Fragment>
+- injecting content, props, event-handlers, expressions with {}
+- injecting object literals with {{}}
+- event-handlers: onClick={handler} and onClick={()=>handler} // careful...
 - conditional rendering
 - iterative rendering and keys
 - <scrict> mode: so good they rendered it twice
@@ -48,19 +66,28 @@ Toby Dussek
 - events, event.target, preventDefault and stopPropagation
 - modern ES6+ features
 
+- Debugging: interpreting error messages, using console.log and using <pre>JSON</pre>
+- using React Devtools
+
 - Typescript
 - language engine and data-type checking
 - development-time only
 - any-type and optional members
 - types, combinations, interface, enum
+- post-colon typing n:type
+- typing objects {k:v}:{k:type}
 - generics
 - the Typescript playground and tsconfig
+- difficult-to-solve typescript problems
 
 - asynchronous code: loading data with fetch
+- impure functional components: useEffect hook
 - events, promises
 - observables
 
-- CSS, isolation and custom style components
+- CSS still cascades from <App/>
+- Custom style components
+- cannot use css 'class' in jsx, so use 'className'
 
 - dev and prod build automation
 
