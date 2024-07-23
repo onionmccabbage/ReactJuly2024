@@ -19,9 +19,9 @@ function App() {
       <ul>
         {/* item is the iterable member of the array. key is automatically provided */}
         {/* we may need to wait until data exists... */}
-        {/* {creatures && creatures.map((item, key) => { // key will be 0, 1, 2 ... */}
+        {creatures && creatures.map((item, key) => { // key will be 0, 1, 2 ...
         {/* does this work with async data */}
-        {creatures?.map((item, key) => { // key will be 0, 1, 2 ...
+        {/* {creatures?.map((item, key) => { // key will be 0, 1, 2 ... */}
           {/* or use the ternary operator condition?true:false */ }
           // {!creatures? <p>Wait...</p> :creatures.map((item, key) => { // key will be 0, 1, 2 ...
           return (
