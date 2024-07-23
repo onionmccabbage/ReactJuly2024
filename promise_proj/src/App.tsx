@@ -7,7 +7,12 @@ import getCats from './services/catService'
 function App() {
   // we need a mechanism to retrieve API data
   const [cats, setCats] = useState([]) // start with an empty array
+  const [smallCats, setSmallCats] = useState([])
   const [chooseWidth, setChooseWidth] = useState(700)
+  const changeWhichCats = (num:number)=>{ // num will be the chosen width 
+    setSmallCats(cats.filter((cat:any)=>  cat.width < num))
+  }
+
   // we cannot tell what may be retured, so our function is no longer pure
   // useEffect is for handling these side-effects
   useEffect( () => {
@@ -26,6 +31,8 @@ function App() {
   // form field handler methods
   const handleRangeChange = ()=>{
     setChooseWidth(event?.target.value) // same as always
+    // now apply this value to our setSmallCats
+    changeWhichCats(event?.target.value) // can we use the chooseWidth here...?
   }
 
   return (
@@ -34,7 +41,7 @@ function App() {
       <p>We can retrieve REST data from any visible API</p>
       {/* this is a handy way to see the entire returned data */}
       {/* NB don't do this in production */}
-      <pre>{JSON.stringify(cats)}</pre>
+      {/* <pre>{JSON.stringify(cats)}</pre> */}
       {/* we need a contolled form field to specify filter parameter */}
     <form>
       <label>
@@ -42,13 +49,16 @@ function App() {
       <input onChange={handleRangeChange} value={chooseWidth} type='range' min='500' step='100' max='2000' />
       </label>
     </form>
-      {cats.map((cat: any) => {
+    {/* cat.map will map every cat to a rendition */}
+      {smallCats?.map((cat: any) => {
+
         return (
           <Fragment key={cat.id}>
             <Cat cat={cat} />
           </Fragment>
         )
       })}
+
     </>
   )
 }
