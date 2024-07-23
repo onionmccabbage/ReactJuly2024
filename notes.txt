@@ -18,12 +18,12 @@ Toby Dussek
 
 - the DOM and how React decides what to render
 > Install React dev tools
-- no longer use class components - instead use pure functional components
+> no longer use class components - instead use pure functional components
 
-on Tuesday....
+Questions....
 q - how can we do like onBlur and maintain mutated text input...
 > - null value in data
-q - service returns a promise - how architect handling in App??
+q - separate service returns a promise - how architect handling in App??
 
 
 > scaffolding a vite project with React and Typescript
@@ -41,8 +41,8 @@ q - service returns a promise - how architect handling in App??
 * hooks and component lifecycle
 
 - Architecture
-- separating components into logical structures
-- re-useable components and code: export and exportDefault
+> separating components into logical structures
+- re-useable components and code: export and export default
 - ways to import (also configurations needed)
 - ways to architect a project
 * where to put static assets
@@ -75,21 +75,21 @@ q - service returns a promise - how architect handling in App??
 - Debugging: interpreting error messages, using console.log and using <pre>JSON</pre>
 * using React Devtools
 
-* Typescript
-- language engine and data-type checking
-- development-time only
+> Typescript
+> language engine and data-type checking
+> development-time only
 - any-type and optional members
 - types, combinations, interface, enum
-- post-colon typing n:type
-- typing objects {k:v}:{k:type}
-- generics
-- the Typescript playground and tsconfig
+> post-colon typing n:type
+> typing objects {k:v}:{k:type}
+> generics
+> the Typescript playground and tsconfig
 - difficult-to-solve typescript problems
 
-* filter
-* asynchronous code: loading data with fetch
-* impure functional components: useEffect hook
-* events, promises
+> filter
+> asynchronous code: loading data with fetch
+> impure functional components: useEffect hook
+> events, promises
 - observables
 
 - CSS still cascades from <App/>
