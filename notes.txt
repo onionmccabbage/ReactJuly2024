@@ -22,7 +22,8 @@ Toby Dussek
 
 on Tuesday....
 q - how can we do like onBlur and maintain mutated text input...
-q - null value in data
+> - null value in data
+q - service returns a promise - how architect handling in App??
 
 
 > scaffolding a vite project with React and Typescript
