@@ -9,6 +9,7 @@ const MyForm = ()=>{
         // event? means is may not exist - it is optional
         event?.preventDefault()
     }
+    // work with simple values... 
     const doChange = ()=>{
         setName(event?.target.value)
     }
@@ -19,10 +20,13 @@ const MyForm = ()=>{
         <form onSubmit={doSubmit}>
             {/* <input type="text" value={name} onChange={doChange} /> */}
             {/* solve the onBlur={} issue */}
-            <input required type="text" value={name} onChange={()=>{doChange()}}  />
+            <input required type="text" 
+                // leave value unbound (eith no chaange handler)
+                value={name} 
+                onChange={()=>{doChange()}}  />
             {/* <input type="text" value={name} onChange={()=>{setName(event?.target.value)}} /> */}
             <button>Go</button>
-        </form>
+        </form> 
         </>
     )
 

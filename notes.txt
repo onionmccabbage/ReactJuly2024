@@ -17,12 +17,12 @@ Toby Dussek
 - all questions, comments, observations, interjections etc. welcome at any time
 
 - the DOM and how React decides what to render
-- React dev tools
+> Install React dev tools
 - no longer use class components - instead use pure functional components
 
-q - how can we do like onBlur  and maintain mutated text input...
-
-
+on Tuesday....
+q - how can we do like onBlur and maintain mutated text input...
+q - null value in data
 
 
 > scaffolding a vite project with React and Typescript
@@ -35,36 +35,36 @@ q - how can we do like onBlur  and maintain mutated text input...
     const MyComponent(props)=>{}
     const MyComponent({propA, propB})=>{}
 - only ever use state to change stateful values: never mutate them directly
-- passing components as props (rendering children)
+> passing components as props (rendering children)
 - useContext hook
-- hooks and component lifecycle
+* hooks and component lifecycle
 
 - Architecture
 - separating components into logical structures
 - re-useable components and code: export and exportDefault
 - ways to import (also configurations needed)
 - ways to architect a project
-- where to put static assets
+* where to put static assets
 - package.json: adding libraries and configuring behaviour
 - other related config files: tsconfig etc.
 - what a production build looks like
 
 - writing custom hooks
 
-- jsx: always use Capitals for non-standard elements
-- <> and <Fragment>
-- injecting content, props, event-handlers, expressions with {}
-- injecting object literals with {{}}
-- event-handlers: onClick={handler} and onClick={()=>handler} // careful...
+> jsx: always use Capitals for non-standard elements
+> <> and <Fragment>
+> injecting content, props, event-handlers, expressions with {}
+> injecting object literals with {{}}
+- event-handlers: onClick={handler} and onClick={()=>handler()} // careful...
 - conditional rendering
-- iterative rendering and keys
-- <scrict> mode: so good they rendered it twice
+> iterative rendering and keys
+* <scrict> mode: so good they rendered it twice
 
 - <form> and <Form> (also neither)
-- browser-driven validation
-- form action
+> browser-driven validation
+> form action
 > form fields: controlled and uncontrolled
-- binding form field events
+> binding form field events
 - client-side data: map and filter
 
 - JavaScript
@@ -72,9 +72,9 @@ q - how can we do like onBlur  and maintain mutated text input...
 - modern ES6+ features
 
 - Debugging: interpreting error messages, using console.log and using <pre>JSON</pre>
-- using React Devtools
+* using React Devtools
 
-- Typescript
+* Typescript
 - language engine and data-type checking
 - development-time only
 - any-type and optional members
@@ -85,9 +85,10 @@ q - how can we do like onBlur  and maintain mutated text input...
 - the Typescript playground and tsconfig
 - difficult-to-solve typescript problems
 
-- asynchronous code: loading data with fetch
-- impure functional components: useEffect hook
-- events, promises
+* filter
+* asynchronous code: loading data with fetch
+* impure functional components: useEffect hook
+* events, promises
 - observables
 
 - CSS still cascades from <App/>
