@@ -4,10 +4,10 @@ import Photo from "../types/photo"
 const PhotoComponent = () => {
     const [photos, setPhotos] = useState([]) // we will use .map so need an array
     const [maxWidth, setMaxWidth] = useState(1)
-    const [smallPhotos, setSmallPhotos] = useState([])
+    const [albumPhotos, setAlbumPhotos] = useState([])
     const [withItalic, setwithItalic] = useState(false)
     const changeWhichPhotos = (num: number) => {
-        setSmallPhotos(photos.filter((photo: Photo) =>
+        setAlbumPhotos(photos.filter((photo: Photo) =>
             photo.albumId === num
         ))
     }
@@ -26,7 +26,7 @@ const PhotoComponent = () => {
                 .then(response => response.json())
                 .then((data) => {
                     setPhotos(data)
-                    setSmallPhotos(data) // initially no filtering
+                    setAlbumPhotos(data) // initially no filtering
                 })
 // code that runs once only, the first time that a component is mounted.
 // The second parameter of the useEffect hook can either be an empty array –
@@ -42,11 +42,11 @@ const PhotoComponent = () => {
             <button onClick={changeItalic}>{withItalic?<>On</>:<>Off</>}</button>
             <label>
                 Show photos for album {maxWidth}
-                <input value={maxWidth} onChange={changeMaxWidth} type="range" min={1} max={10} />
+                <input value={maxWidth} onChange={changeMaxWidth} type="range" min={1} max={100} />
             </label>
 
             {/* {Photos.map((Photo: any) => { // remember, if we use {} we MUST say 'return' */}
-            {smallPhotos.map((photo: any) => {
+            {albumPhotos.map((photo: any) => {
                 // JSX elements directly inside a map() call always need keys
                 return (
                     <section key={Number(photo.id)}>
