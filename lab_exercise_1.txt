@@ -1,4 +1,4 @@
-Exercise 1
+Exercise 1 until 3:00 tea break (1hr 15 mims)
 ==========
 Work on your own or together
 At the end there will be an opportunity to show code
@@ -7,6 +7,7 @@ Adapt these ideas to suit your own thinking
 In a new React project, retrieve data from 
   https://jsonplaceholder.typicode.com/photos/
 Write a component to render one photo and it's title
+(ue the thumbnailUrl)
 Iterate over the returned data to show the retrieved photos
 (there are 5000 photos in this data set)
 
