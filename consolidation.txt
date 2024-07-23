@@ -1,0 +1,10 @@
+Optional Consolidation Exercise
+===============================
+Continue with the jsonplaceholder.typicode api
+This api provides /photos /users /todos /post
+- Let the user choose which collection of data they want 
+    (maybe a drop-down)
+- Render different content depending on the category
+- Find a way to show post for a particular user
+    (selects a user then show that users details and their posts )
+Use custom hooks for the api requests
