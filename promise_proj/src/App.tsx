@@ -2,6 +2,7 @@ import { Fragment, useEffect, useState } from 'react'
 
 import './App.css'
 import Cat from './components/Cat'
+import getCats from './services/catService'
 
 function App() {
   // we need a mechanism to retrieve API data
@@ -11,12 +12,7 @@ function App() {
   useEffect( ()=>{
     // promises are 'thenable'
     // this catapi returns an evolving stream of data
-    fetch('https://api.thecatapi.com/v1/images/search?limit=10')
-      .then( (response)=>{return response.json()} )
-      .then( (data)=>{
-        // handle the returned data
-        setCats(data)
-      } )
+    setCats( getCats() )
       // [] means only fetch when the component is first rendered
   },[])
 
