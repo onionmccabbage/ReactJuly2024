@@ -1,0 +1,28 @@
+Exercise 1
+==========
+Work on your own or together
+At the end there will be an opportunity to show code
+Adapt these ideas to suit your own thinking
+
+In a new React project, retrieve data from 
+  https://jsonplaceholder.typicode.com/photos/
+Write a component to render one photo and it's title
+Iterate over the returned data to show the retrieved photos
+(there are 5000 photos in this data set)
+
+Add a form with a field to control which album to show
+(every photo has an albumId which is an integer 1-100)
+Filter the photos to show just the chosen album photos 
+(there are 50 photos per album)
+
+Optional (if time)
+==================
+Provide a means for the user to pick a specific photo ID (1-5000)
+You could do this by appending `id` to the end of the url
+    apiUrl = `https://jsonplaceholder.typicode.com/${id}`
+Or you could filter the photos you have already downloaded
+In either case, let the user choose whether to: 
+- show just one photo (match an id)
+- or show many photos (an album of photos or all the photos)
+
+You may like to declare interfaces and use types to resolve Typescript warnings

@@ -3,6 +3,7 @@ import { Fragment, useEffect, useState } from 'react'
 import './App.css'
 import Cat from './components/Cat'
 import getCats from './services/catService'
+import CatsB from './components/CatsB'
 
 function App() {
   // we need a mechanism to retrieve API data
@@ -24,7 +25,7 @@ function App() {
         // handle the returned data
         setCats(data) // we return the retrieved JSON data
       })
-    // setCats( async getCats())
+    // setCats( getCats())
     // [] means only fetch when the component is first rendered
   }, [])
 
@@ -37,6 +38,7 @@ function App() {
 
   return (
     <>
+      <CatsB />
       <h3>Here are some assets from a remote API</h3>
       <p>We can retrieve REST data from any visible API</p>
       {/* this is a handy way to see the entire returned data */}
