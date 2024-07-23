@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useState } from 'react'
 
 import './App.css'
+import Cat from './components/Cat'
 
 function App() {
   // we need a mechanism to retrieve API data
@@ -29,11 +30,7 @@ function App() {
       {cats.map( (cat:any)=>{
         return (
           <Fragment key={cat.id}>
-            <h4>ID {cat.id} width {cat.width}</h4>
-            {/* every img must be accessible, so remember to include alt */}
-            <img src={cat.url} alt={`${cat.id}${cat.url}`} 
-              width={cat.width/10} 
-              height={cat.height/10}/>
+            <Cat cat={cat} />
           </Fragment>
         )
       } )}
