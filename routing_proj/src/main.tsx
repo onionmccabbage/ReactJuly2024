@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from './routes/Root.tsx'
 import About from './routes/About.tsx'
 import Contact from './routes/Contact.tsx'
+import Weather from './routes/Weather.tsx'
 // NB remember to npm install react-router-dom
 
 // the brouser router is an array of routes
@@ -18,7 +19,9 @@ const router = createBrowserRouter([
       {path:'/contacts/:c_id',
         element:<Contact/>
       },
-      {}
+      {path:'/weather',
+        element:<Weather/>
+      }
     ]
   },
   // url/about

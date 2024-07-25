@@ -1,4 +1,4 @@
-Continue with the routed app.
+Continue with the routed app. (we will finish at tea-break 3:00)
 
 Build new components that will consume the weather API available at
   https://api.openweathermap.org/data/2.5/weather?q=hull&APPID=48f2d5e18b0d2bc50519b58cce6409f1
