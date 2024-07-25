@@ -21,6 +21,35 @@
       const root = ReactDOM.createRoot(container);
       root.render(<MyApp />);
 
+      // this would be imported into another module as follows
+      // import fnZZZ from ...
+      export default function fnZZZ(){
+
+      }
+      // import {fnYYY} from ...
+      export function fnYYY(){
+
+      }
+      export const wibble = 'this is immutable'
+
+
+      // access as MyObj.inner 
+      // 
+      export const MyObj = {inner:()=>{}}
+      /// MyClass (or instance).doStuff
+      export class MyClass{
+        doStuff(){}
+      }
+
+      // here we declare a scope/namespace/code block
+      {
+        // this is in a different scope/namespace
+        const MyObj = {}
+      }
+      {
+        // import stuff
+      }
+
     </script>
     <!--
       Note: this page is a great way to try React but it's not suitable for production.
