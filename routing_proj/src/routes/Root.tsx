@@ -7,7 +7,7 @@ function Root(){
         {/*careful: using <a> will refresh the page */}
         {/* <a href='./about'>About</a> */}
         {/* we tend to usev Link instead of <a> */}
-        <Link to={'\about'}>About</Link>
+        <Link to={'/about'}>About</Link>
 
         <aside>
             {/* outlet is used for child routing */}

@@ -5,17 +5,26 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from './routes/Root.tsx'
 import About from './routes/About.tsx'
+import Contact from './routes/Contact.tsx'
 // NB remember to npm install react-router-dom
 
 // the brouser router is an array of routes
 const router = createBrowserRouter([
   // the root route
-  {path:'/',
-    element:<Root/>
+  {
+    path: '/',
+    element: <Root />,
+    children: [
+      {path:'/contacts',
+        element:<Contact/>
+      },
+      {}
+    ]
   },
   // url/about
-  {path:'/about',
-    element:<About />
+  {
+    path: '/about',
+    element: <About />
   },
   {}
 ])
