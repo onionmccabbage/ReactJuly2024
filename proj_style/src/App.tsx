@@ -3,8 +3,8 @@ import './App.css'
 
 // CSS 
 // tag styles apply automatically to every tag (override the default style)
-// class styles beat tag styles must be manually applied anywhere
-// id styles beat class styles must be manually applied ONCE
+// class styles beat tag styles. Class styles must be manually applied anywhere
+// id styles beat class styles. Tag styles must be manually applied ONCE
 
 // we need styled-components
 import styled from 'styled-components'

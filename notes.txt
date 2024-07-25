@@ -115,9 +115,12 @@ caniuse.com
 
 - ssr, eager-loading and lazy loading
 
+* step-through the debug code...
+
+
 - routing with react-router
 - root router
 - <a>,  <Link> and <outlet>
 - SPA and multi-page apps
 - passing route parameters
-- catch-all and 404 handlers
+* catch-all and 404 handlers
