@@ -13,6 +13,8 @@ Toby Dussek
 q - ueCallback use cases
 q - eager-loading and lazy-loading components (e.g. in routing)
 
+End of course feedback link: https://forms.office.com/e/bSbwhF9xKM
+
 > introductions and setup
 > manage recordings
 > the repo https://github.com/onionmccabbage/ReactJuly2024
@@ -25,40 +27,40 @@ q - eager-loading and lazy-loading components (e.g. in routing)
 
 Questions....
 q - why does my devtools not respond to debugger ????
-q - how can we do like onBlur and maintain mutated text input...see MyInput component in basics project
+> - how can we do like onBlur and maintain mutated text input...see MyInput component in basics project
 > - null value in data. 
 > - useCustomHook separate service returns a promise - how architect handling in App??
 
 > scaffolding a vite project with React and Typescript
 > the vite cli
-- understanding state: the useState hook (all hooks MUST go at the top of the code)
+> understanding state: the useState hook (all hooks MUST go at the top of the code)
 - lifting state up
 - immutable props and state: a single-source of truth
 - passing props
-- receiving props into components: 
+> receiving props into components: 
     const MyComponent(props)=>{}
     const MyComponent({propA, propB})=>{}
-- only ever use state to change stateful values: never mutate them directly
+> only ever use state to change stateful values: never mutate them directly
 > passing components as props (rendering children)
 - useContext hook
   https://react.dev/reference/react/useContext
-- useMemo hook
+> useMemo hook
   https://react.dev/reference/react/useMemo
-- useCallBack hook
+> useCallBack hook
   https://react.dev/reference/react/useCallback
 > hooks and component lifecycle
 
+Other References
 builtwith.com
 caniuse.com
 
-
-- Architecture
+> Architecture
 > separating components into logical structures
-- re-useable components and code: export and export default
-- ways to import (also configurations needed)
-- ways to architect a project
+> re-useable components and code: export and export default
+> ways to import (also configurations needed)
+> ways to architect a project
 > where to put static assets
-- package.json: adding libraries and configuring behaviour
+> package.json: adding libraries and configuring behaviour
 - other related config files: tsconfig etc.
 - what a production build looks like
 
@@ -68,20 +70,20 @@ caniuse.com
 > <> and <Fragment>
 > injecting content, props, event-handlers, expressions with {}
 > injecting object literals with {{}}
-- event-handlers: onClick={handler} and onClick={()=>handler()} // careful...
+> event-handlers: onClick={handler} and onClick={()=>handler()} // careful...
 > conditional rendering
 > iterative rendering and keys
 * <scrict> mode: so good they rendered it twice
 
-- <form> and <Form> (also neither)
+> <form> and <Form> (also neither)
 > browser-driven validation
 > form action
 > form fields: controlled and uncontrolled
 > binding form field events
-- client-side data: map and filter
+> client-side data: map and filter
 
-- JavaScript
-- events, event.target, preventDefault and stopPropagation
+> JavaScript
+> events, event.target, preventDefault and stopPropagation
 - modern ES6+ features
 
 - Debugging: interpreting error messages, using console.log and using <pre>JSON</pre>
@@ -90,7 +92,7 @@ caniuse.com
 > Typescript
 > language engine and data-type checking
 > development-time only
-- any-type and optional members
+> any-type and optional members
 - types, combinations, interface, enum
 > post-colon typing n:type
 > typing objects {k:v}:{k:type}
@@ -104,10 +106,10 @@ caniuse.com
 > events, promises
 - observables
 
-- CSS still cascades from <App/>
-- Custom styled components
+> CSS still cascades from <App/>
+> Custom styled components
   https://styled-components.com/
-- cannot use css 'class' in jsx, so use 'className'
+> cannot use css 'class' in jsx, so use 'className'
 
 - dev and prod build automation
 
@@ -117,10 +119,9 @@ caniuse.com
 
 * step-through the debug code...
 
-
-- routing with react-router
-- root router
-- <a>,  <Link> and <outlet>
+> routing with react-router
+> root router
+> <a>,  <Link> and <outlet>
 - SPA and multi-page apps
-- passing route parameters
+> passing route parameters
 * catch-all and 404 handlers
