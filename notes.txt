@@ -10,6 +10,9 @@ Toby Dussek
 3:00  tea
 4:30  end
 
+q - ueCallback use cases
+
+
 > introductions and setup
 > manage recordings
 > the repo https://github.com/onionmccabbage/ReactJuly2024
@@ -21,10 +24,10 @@ Toby Dussek
 > no longer use class components - instead use pure functional components
 
 Questions....
-q - how can we do like onBlur and maintain mutated text input...
-> - null value in data
-q - separate service returns a promise - how architect handling in App??
-
+q - why does my devtools not respond to debugger ????
+q - how can we do like onBlur and maintain mutated text input...see MyInput component in basics project
+> - null value in data. 
+> - useCustomHook separate service returns a promise - how architect handling in App??
 
 > scaffolding a vite project with React and Typescript
 > the vite cli
@@ -38,26 +41,31 @@ q - separate service returns a promise - how architect handling in App??
 - only ever use state to change stateful values: never mutate them directly
 > passing components as props (rendering children)
 - useContext hook
-* hooks and component lifecycle
+  https://react.dev/reference/react/useContext
+- useMemo hook
+  https://react.dev/reference/react/useMemo
+- useCallBack hook
+  https://react.dev/reference/react/useCallback
+> hooks and component lifecycle
 
 - Architecture
 > separating components into logical structures
 - re-useable components and code: export and export default
 - ways to import (also configurations needed)
 - ways to architect a project
-* where to put static assets
+> where to put static assets
 - package.json: adding libraries and configuring behaviour
 - other related config files: tsconfig etc.
 - what a production build looks like
 
-- writing custom hooks
+> writing custom hooks
 
 > jsx: always use Capitals for non-standard elements
 > <> and <Fragment>
 > injecting content, props, event-handlers, expressions with {}
 > injecting object literals with {{}}
 - event-handlers: onClick={handler} and onClick={()=>handler()} // careful...
-- conditional rendering
+> conditional rendering
 > iterative rendering and keys
 * <scrict> mode: so good they rendered it twice
 
@@ -93,7 +101,8 @@ q - separate service returns a promise - how architect handling in App??
 - observables
 
 - CSS still cascades from <App/>
-- Custom style components
+- Custom styled components
+  https://styled-components.com/
 - cannot use css 'class' in jsx, so use 'className'
 
 - dev and prod build automation

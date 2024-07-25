@@ -4,6 +4,10 @@ import ButtonPanel from './components/ButtonPanel'
 import Label from './Label'
 import Wrapper from './components/Wrapper'
 import MyForm from './components/MyForm'
+import MyInput from './components/MyInput'
+import Todo from './components/MyStyledComp'
+import MyDebounce from './components/MyDebounce'
+import MyInputDb from './components/MyInputDb'
 
 // NB React uses initial cap for any elemnt that is React-specific
 const App = () => { // or function App(){}
@@ -52,6 +56,13 @@ const App = () => { // or function App(){}
           </Wrapper>
           <hr/>
           <MyForm />
+          <hr/>
+          {/* <MyInput /> */}
+          <hr/>
+          <MyDebounce />
+          {/* <MyInputDb /> */}
+          <hr/>
+          {/* <Todo /> */}
         </section>
       </article>
       <footer></footer>
