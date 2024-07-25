@@ -48,6 +48,10 @@ q - how can we do like onBlur and maintain mutated text input...see MyInput comp
   https://react.dev/reference/react/useCallback
 > hooks and component lifecycle
 
+builtwith.com
+caniuse.com
+
+
 - Architecture
 > separating components into logical structures
 - re-useable components and code: export and export default
