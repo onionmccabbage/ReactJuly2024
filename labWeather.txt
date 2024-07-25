@@ -1,0 +1,42 @@
+Continue with the routed app.
+
+Build new components that will consume the weather API available at
+  https://api.openweathermap.org/data/2.5/weather?q=hull&APPID=48f2d5e18b0d2bc50519b58cce6409f1
+  (this includes my API key, good for 60 requests per minute. You can sign up for free for your own API key)
+The user may enter a city (string at least two characters)
+Fetch the weather report and show the description, temperature and wind-speed
+(You may choose to display ther returned data members)
+Include the city name and a date-time when the report was retrieved
+
+Aim for good architecture with modular construction 
+Choose where state should be managed
+You could write a custom hook to manage the fetched weather
+
+Details
+-------
+- Ask the user for a 'city' (hull in the example)
+- Use this to make a request to the API (handle problems elegantly)
+- From the response.json, show the weather description and temperature
+	weather[0][description] and main.temp (also wind.speed)
+- You may choose to show other data members
+- Make use of the React Dev Tools where necessary
+
+Optional
+--------
+- Refer to the react-router-dom documentation about passing arguments
+  https://reactrouter.com/en/main/start/tutorial#the-contact-route-ui
+  Pass the city value into a child route to show weather results
+- Ensure the weather data is type-safe (e.g. write an interface or class for Weather)
+- validate city either as non-empty string or as one from some permitted values
+- persist the most-recent city choice, so that they are retrieved when the page first loads
+  Use them to pre-populate the form fields (Maybe use localStorage)
+- consider a strategy to cache the weather response for a particular request
+- When weather reports are retrieved, show them nicely
+
+If Time
+-------
+- use the API at https://ipapi.co to guess the users location then automatically retrieve the weather
+- Make the weather retrieval happen automatically every 30 seconds
+
+For any given rendition of the app, store each weather report in an array of Weather instances. 
+Provide a means to retrieve this array and display it nicely (maybe routing, but state might be a problem)

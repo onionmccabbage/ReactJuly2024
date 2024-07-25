@@ -1,0 +1,6 @@
+Build a new React project that will consume the Star-Wars API available at
+
+The user may enter a category and an Inclide
+Category may be people, planets, species, starships or vehicles
+Optional
+======== an array of Weather instances. Provide a means to retrieve this array and display it nicely

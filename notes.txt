@@ -11,7 +11,7 @@ Toby Dussek
 4:30  end
 
 q - ueCallback use cases
-
+q - eager-loading and lazy-loading components (e.g. in routing)
 
 > introductions and setup
 > manage recordings

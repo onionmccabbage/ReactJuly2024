@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <Root />,
     children: [
-      {path:'/contacts',
+      {path:'/contacts/:c_id',
         element:<Contact/>
       },
       {}
