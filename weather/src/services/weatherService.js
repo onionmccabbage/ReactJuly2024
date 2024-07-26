@@ -12,7 +12,8 @@ import { useEffect, useState } from "react"
             .then((response)=>response.json())
             .then((data)=>setWeatherData(data))
             .catch((error)=>console.error(`Problem: ${error}`))
-    }, [apiKey, city, country]) 
+    // we probably dont need to depend on APIKEY
+        }, [apiKey, city, country]) 
     // we can now return the retrieved data
     return weatherData
 }
