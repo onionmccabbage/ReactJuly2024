@@ -1,42 +1,44 @@
-import { Fragment, useEffect, useState } from 'react'
-
+import { useState, useEffect } from 'react'
+// remember to npm install react-router-dom if need routing
 import './App.css'
-import Home from './Home'
-import { messageService } from './services/my_service'
+
+import { messageService } from "./services/my_service";
+import Home from './home';
+// import { Message } from './interfaces/message';
 
 function App() {
+  const [messages, setMessages] = useState([{ text:'' }]);
 
-  const [messages, setMessages] = useState([{ text: '' }])
   useEffect(() => {
-    const subscription = messageService.onMessage().subscribe((msg) => {
-      if (msg) {
-        // ...messages unpacks all the exisitng messages, then we append our msg
-        setMessages([...messages, msg])
+    // componentwillmount in functional component.
+    // Anything in here is fired on component mount.
+    // subscribe to home component messages
+    const subscription = messageService.onMessage().subscribe((message) => {
+      if (message) {
+        // add message to local state if not empty
+        setMessages((messages)=> [...messages, message]); // data type................
       } else {
-        setMessages([]) // clear out all the messages
+        // clear messages when empty message received
+        setMessages([]);
       }
-      // we also need a destruction mechanism (when the component is removed)
       return () => {
-        // when the last subscriber is unsibscribed, the observale will be marked for destruction
-        return subscription.unsubscribe()
+        // componentwillunmount in functional component.
+        // Anything in here is fired on component unmount.
+        // unsubscribe to ensure no memory leaks
+        return subscription.unsubscribe();
       }
-    })
-  }, [])
 
-return (
-  <>
+    });
+  }, []);
+
+  return (
     <section>
-      <h3>We will see some data here...</h3>
       <Home />
-      <aside>
-        {/* render any messages */}
-        {messages.map((message, index) => { 
-          return (<Fragment key={index}>{message.text}</Fragment>)
-        })}
-      </aside>
+      {messages.map((message: Message, index: number) =>
+        <p key={index}>{message.text}</p>
+      )}
     </section>
-  </>
-)
+  );
 }
 
-export default App
+export default App;

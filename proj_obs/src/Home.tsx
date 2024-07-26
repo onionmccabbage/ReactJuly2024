@@ -1,16 +1,18 @@
 import { messageService } from "./services/my_service";
 
-const Home = ()=>{
-    const sendMessage = ()=>
-        messageService.sendMessage('message from home component')
-    const clearMessages = ()=>
-        messageService.clearMessages()
+const Home=()=>{
+    const sendMessage=()=>{
+        // send message to subscribers via observable subject
+        messageService.sendMessage('Message from Home Component');
+    }
+    const clearMessages=()=>{
+        messageService.clearMessages();
+    }
     return (
-        <>
-            <button onClick={sendMessage} >Send</button>
-            <button onClick={clearMessages} >Clear</button>
-        </>
-    )
+        <div>
+            <button onClick={sendMessage} >Send Message</button>
+            <button onClick={clearMessages} >Clear Messages</button>
+        </div>
+    );
 }
-
-export default Home
+export default Home;
