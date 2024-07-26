@@ -5,8 +5,6 @@ import Section from './components/Section'
 import Heading from './components/Heading'
 
 function App() {
-
-
   return (
     <>
       <Section level={1}>
