@@ -50,7 +50,7 @@ q - why does my devtools not respond to debugger ????
   https://react.dev/reference/react/useCallback
 > hooks and component lifecycle
 
-Other References
+Other Online References
 builtwith.com
 caniuse.com
 
