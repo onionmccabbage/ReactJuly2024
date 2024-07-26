@@ -1,6 +1,17 @@
-Build a new React project that will consume the Star-Wars API available at
+Build a new React project that will consume the API available at
+  https://swapi.dev/api/planets/2
 
-The user may enter a category and an Inclide
+The user may enter a category and an id
 Category may be people, planets, species, starships or vehicles
+NB some do not work
+Ammend the 'weather' routed app to use this API
+Or else use any strategy
+Use handlers for problems like vehicles/2
+
 Optional
-======== an array of Weather instances. Provide a means to retrieve this array and display it nicely
+========
+Use debugger; to run in debug mode - step through your code
+Create a top-level Swapi class with 'name'
+Then subclass for Species etc.
+
+You might choose to implement Observables for the form field values (category and id)
