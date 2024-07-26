@@ -17,7 +17,7 @@ function App() {
   // we cannot tell what may be retured, so our function is no longer pure
   // useEffect is for handling these side-effects
   useEffect( () => {
-    debugger; // this will set a break point when run with the React dev tools
+    // debugger; // this will set a break point when run with the React dev tools
     // promises are 'thenable'
     // this catapi returns an evolving stream of data
     fetch('https://api.thecatapi.com/v1/images/search?limit=10')

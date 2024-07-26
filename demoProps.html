@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Attributes compared to DOM properties</title>
+</head>
+
+<body>
+    <h2>See console for element attribute and DOM property</h2>
+    <input id="frmName" value="hello" /><br />
+    <button id="btnGo">Go</button>
+</body>
+<script>
+    const doStuff = () => {
+        // what is the (immutable) html attribute
+        console.log(frmName.getAttribute('value'))
+        // what is the DOM property value
+        console.log(frmName.value)
+    }
+    btnGo.addEventListener('click', doStuff)
+</script>
+
+</html>

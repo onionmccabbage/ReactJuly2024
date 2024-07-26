@@ -4,6 +4,7 @@ import './App.css'
 
 import { messageService } from "./services/my_service";
 import Home from './home';
+import { Message } from './interfaces/message';
 // import { Message } from './interfaces/message';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     // subscribe to home component messages
     const subscription = messageService.onMessage().subscribe((message) => {
       if (message) {
+        // debugger; // puts a break point in the browser
         // add message to local state if not empty
         setMessages((messages)=> [...messages, message]); // data type................
       } else {

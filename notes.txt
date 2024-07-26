@@ -19,9 +19,9 @@ End of course feedback link: https://forms.office.com/e/bSbwhF9xKM
 > manage recordings
 > the repo https://github.com/onionmccabbage/ReactJuly2024
 > code-along and then lab exercises
-- all questions, comments, observations, interjections etc. welcome at any time
+> all questions, comments, observations, interjections etc. welcome at any time
 
-- the DOM and how React decides what to render
+> the DOM and how React decides what to render
 > Install React dev tools
 > no longer use class components - instead use pure functional components
 
@@ -34,15 +34,15 @@ q - why does my devtools not respond to debugger ????
 > scaffolding a vite project with React and Typescript
 > the vite cli
 > understanding state: the useState hook (all hooks MUST go at the top of the code)
-- lifting state up
-- immutable props and state: a single-source of truth
-- passing props
+> lifting state up
+> immutable props and state: a single-source of truth
+> passing props
 > receiving props into components: 
     const MyComponent(props)=>{}
     const MyComponent({propA, propB})=>{}
 > only ever use state to change stateful values: never mutate them directly
 > passing components as props (rendering children)
-- useContext hook
+> useContext hook
   https://react.dev/reference/react/useContext
 > useMemo hook
   https://react.dev/reference/react/useMemo
@@ -73,7 +73,7 @@ caniuse.com
 > event-handlers: onClick={handler} and onClick={()=>handler()} // careful...
 > conditional rendering
 > iterative rendering and keys
-* <scrict> mode: so good they rendered it twice
+> <scrict> mode: so good they rendered it twice
 
 > <form> and <Form> (also neither)
 > browser-driven validation
@@ -84,16 +84,16 @@ caniuse.com
 
 > JavaScript
 > events, event.target, preventDefault and stopPropagation
-- modern ES6+ features
+> modern ES6+ features
 
-- Debugging: interpreting error messages, using console.log and using <pre>JSON</pre>
+> Debugging: interpreting error messages, using console.log and using <pre>JSON</pre>
 * using React Devtools
 
 > Typescript
 > language engine and data-type checking
 > development-time only
 > any-type and optional members
-- types, combinations, interface, enum
+> types, combinations, interface, enum
 > post-colon typing n:type
 > typing objects {k:v}:{k:type}
 > generics
@@ -104,7 +104,7 @@ caniuse.com
 > asynchronous code: loading data with fetch
 > impure functional components: useEffect hook
 > events, promises
-- observables
+> observables
 
 > CSS still cascades from <App/>
 > Custom styled components
@@ -117,11 +117,11 @@ caniuse.com
 
 - ssr, eager-loading and lazy loading
 
-* step-through the debug code...
+> step-through the debug code...
 
 > routing with react-router
 > root router
 > <a>,  <Link> and <outlet>
-- SPA and multi-page apps
+> SPA and multi-page apps
 > passing route parameters
-* catch-all and 404 handlers
+> catch-all and 404 handlers
